@@ -25,7 +25,10 @@ def call_gemini_connections(words: list[str]) -> dict:
     full_prompt = f"{prompt_template}\n\n{words_formatted}"
     
     #get API key from environment variable
-    api_key = r"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"
+    api_path = os.path.join(os.path.dirname(__file__), "api", "keys.json")
+    with open(api_path, "r", encoding="utf-8") as f:
+        keys = json.load(f)
+    api_key = keys.get("api_key_free")
     
     response = requests.post(
         url="https://openrouter.ai/api/v1/chat/completions",

@@ -1,1 +1,4 @@
-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
+{
+    "api_key_free":"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",
+    "api_key_paid":""
+}

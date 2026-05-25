@@ -8,7 +8,7 @@ WORDLE RULES:
   - "absent": The letter is not in the word at all (gray)
 
 STRATEGY:
-1. Start with a strong opening word that has common letters (e.g., CRANE, SLATE, TRACE)
+1. Start with "salet"
 2. Use the feedback to eliminate impossible letters and positions
 3. Consider letter frequency in English words
 4. Avoid repeating letters that have been marked "absent"
